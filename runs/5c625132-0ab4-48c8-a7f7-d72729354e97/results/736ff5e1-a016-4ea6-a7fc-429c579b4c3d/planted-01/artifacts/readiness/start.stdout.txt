@@ -1,0 +1,16 @@
+postgres_ready_ms=120
+✓ DATABASE_URL is defined.
+✓ Database connection successful.
+✓ Database version check successful.
+Datasource "db": PostgreSQL database "umami", schema "public" at "127.0.0.1:5432"
+
+26 migrations found in prisma/migrations
+
+
+No pending migrations to apply.
+
+✓ Database is up to date.
+ready_ms=13090 budget_ms=60000 within_budget=yes
+listening tcp 127.0.0.1:3000
+listening tcp 127.0.0.1:5432
+listening tcp6 [::]:23456

@@ -1,0 +1,22 @@
+⨯ Error [PrismaClientKnownRequestError]: 
+Invalid `prisma.board.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at async R (.next/server/chunks/_1fae-h7._.js:1:1635)
+    at async W (.next/server/chunks/_1fae-h7._.js:1:4859) {
+  code: 'P2025',
+  meta: { modelName: 'Board', operation: 'a delete' },
+  clientVersion: '7.10.0'
+}
+⨯ Error [PrismaClientKnownRequestError]: 
+Invalid `prisma.board.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at async R (.next/server/chunks/_1fae-h7._.js:1:1635)
+    at async W (.next/server/chunks/_1fae-h7._.js:1:4859) {
+  code: 'P2025',
+  meta: { modelName: 'Board', operation: 'a delete' },
+  clientVersion: '7.10.0'
+}

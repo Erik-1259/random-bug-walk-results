@@ -1,0 +1,9 @@
+{
+  "check_id": "tzarg.kolkata-day-counts",
+  "repeat_index": 1,
+  "observed": "assertion_fail",
+  "failure_code": "bucket_labels_mismatch",
+  "duration_ms": 20,
+  "response_artifact_key": "responses/tzarg.kolkata-day-counts.json",
+  "response_artifact_sha256": "5c46e781ed5e95a1298ff5b040972dcb8e5bf26827e6326c8294a1981c9a2d11"
+}

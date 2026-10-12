@@ -1,0 +1,9 @@
+
+Running 4 tests using 1 worker
+
+  ✓  1 checks/tzarg.check.ts:46:3 › tzarg.utc-day-counts (55ms)
+  ✓  2 checks/tzarg.check.ts:46:3 › tzarg.la-day-counts (34ms)
+  ✓  3 checks/tzarg.check.ts:46:3 › tzarg.auckland-day-counts (22ms)
+  ✓  4 checks/tzarg.check.ts:46:3 › tzarg.kolkata-day-counts (22ms)
+
+  4 passed (1.4s)

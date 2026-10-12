@@ -1,0 +1,315 @@
+{
+  "config": {
+    "argv": [
+      "/opt/rbw/verifier/node/bin/node",
+      "/opt/rbw/verifier/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "/opt/rbw/verifier/kit/umami-fixture/playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "/opt/rbw/verifier/kit/umami-fixture/playwright.config.ts",
+    "rootDir": "/opt/rbw/verifier/kit/umami-fixture/checks",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": "/opt/rbw/verifier/kit/umami-fixture/checks/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "never",
+    "projects": [
+      {
+        "outputDir": "/var/lib/rbw/results/rbw-runner/out/work/planted-01/added/round-13/tmp/rbw-umami-fixture-8e45c961cf960690",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/opt/rbw/verifier/kit/umami-fixture/checks",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.check.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/var/lib/rbw/results/rbw-runner/out/work/planted-01/added/round-13/output/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tzarg.check.ts",
+      "file": "tzarg.check.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "tzarg.utc-day-counts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T23:16:15.324Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8bda48dd1ba7cdeb8197-6cf3f3e0c067cf642864",
+          "file": "tzarg.check.ts",
+          "line": 46,
+          "column": 3
+        },
+        {
+          "title": "tzarg.la-day-counts",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 51,
+                  "error": {
+                    "message": "Error: tzarg.la-day-counts (America/Los_Angeles): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [3,8,1]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: tzarg.la-day-counts (America/Los_Angeles): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [3,8,1]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m\n    at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161",
+                    "location": {
+                      "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                      "column": 161,
+                      "line": 73
+                    },
+                    "snippet": "  71 |       response_body: responseBody,\n  72 |     });\n> 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({\n     |                                                                                                                                                                 ^\n  74 |       observed: \"pass\",\n  75 |       failure_code: null,\n  76 |     });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                        "column": 161,
+                        "line": 73
+                      },
+                      "message": "Error: tzarg.la-day-counts (America/Los_Angeles): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [3,8,1]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m\n\n  71 |       response_body: responseBody,\n  72 |     });\n> 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({\n     |                                                                                                                                                                 ^\n  74 |       observed: \"pass\",\n  75 |       failure_code: null,\n  76 |     });\n    at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T23:16:15.611Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/var/lib/rbw/results/rbw-runner/out/work/planted-01/added/round-13/tmp/rbw-umami-fixture-8e45c961cf960690/tzarg.check.ts-tzarg-la-day-counts/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                    "column": 161,
+                    "line": 73
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bda48dd1ba7cdeb8197-fbccf534b1764085395a",
+          "file": "tzarg.check.ts",
+          "line": 46,
+          "column": 3
+        },
+        {
+          "title": "tzarg.auckland-day-counts",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 46,
+                  "error": {
+                    "message": "Error: tzarg.auckland-day-counts (Pacific/Auckland): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [1,6,5]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: tzarg.auckland-day-counts (Pacific/Auckland): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [1,6,5]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m\n    at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161",
+                    "location": {
+                      "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                      "column": 161,
+                      "line": 73
+                    },
+                    "snippet": "  71 |       response_body: responseBody,\n  72 |     });\n> 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({\n     |                                                                                                                                                                 ^\n  74 |       observed: \"pass\",\n  75 |       failure_code: null,\n  76 |     });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                        "column": 161,
+                        "line": 73
+                      },
+                      "message": "Error: tzarg.auckland-day-counts (Pacific/Auckland): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [1,6,5]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m\n\n  71 |       response_body: responseBody,\n  72 |     });\n> 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({\n     |                                                                                                                                                                 ^\n  74 |       observed: \"pass\",\n  75 |       failure_code: null,\n  76 |     });\n    at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T23:16:16.699Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/var/lib/rbw/results/rbw-runner/out/work/planted-01/added/round-13/tmp/rbw-umami-fixture-8e45c961cf960690/tzarg.check.ts-tzarg-auckland-day-counts/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                    "column": 161,
+                    "line": 73
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bda48dd1ba7cdeb8197-ee634193968b5f89c51a",
+          "file": "tzarg.check.ts",
+          "line": 46,
+          "column": 3
+        },
+        {
+          "title": "tzarg.kolkata-day-counts",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 37,
+                  "error": {
+                    "message": "Error: tzarg.kolkata-day-counts (Asia/Kolkata): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [2,7,3]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: tzarg.kolkata-day-counts (Asia/Kolkata): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [2,7,3]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m\n    at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161",
+                    "location": {
+                      "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                      "column": 161,
+                      "line": 73
+                    },
+                    "snippet": "  71 |       response_body: responseBody,\n  72 |     });\n> 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({\n     |                                                                                                                                                                 ^\n  74 |       observed: \"pass\",\n  75 |       failure_code: null,\n  76 |     });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                        "column": 161,
+                        "line": 73
+                      },
+                      "message": "Error: tzarg.kolkata-day-counts (Asia/Kolkata): labels [\"2026-03-07T00:00:00Z\",\"2026-03-08T00:00:00Z\",\"2026-03-09T00:00:00Z\"] counts [2,8,2]; expected counts [2,7,3]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"failure_code\": null,\u001b[39m\n\u001b[32m-   \"observed\": \"pass\",\u001b[39m\n\u001b[31m+   \"failure_code\": \"local_day_counts_mismatch\",\u001b[39m\n\u001b[31m+   \"observed\": \"assertion_fail\",\u001b[39m\n\u001b[2m  }\u001b[22m\n\n  71 |       response_body: responseBody,\n  72 |     });\n> 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({\n     |                                                                                                                                                                 ^\n  74 |       observed: \"pass\",\n  75 |       failure_code: null,\n  76 |     });\n    at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T23:16:17.734Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/var/lib/rbw/results/rbw-runner/out/work/planted-01/added/round-13/tmp/rbw-umami-fixture-8e45c961cf960690/tzarg.check.ts-tzarg-kolkata-day-counts/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts",
+                    "column": 161,
+                    "line": 73
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bda48dd1ba7cdeb8197-15f7b96b79dc4ce5a465",
+          "file": "tzarg.check.ts",
+          "line": 46,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T23:16:14.110Z",
+    "duration": 3943.067,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

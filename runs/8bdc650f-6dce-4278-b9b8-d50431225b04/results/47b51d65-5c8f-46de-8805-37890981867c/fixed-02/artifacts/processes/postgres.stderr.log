@@ -1,0 +1,28 @@
+2026-10-13 12:30:31.867 UTC [1579] LOG:  starting PostgreSQL 15.19 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-10-13 12:30:31.867 UTC [1579] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-10-13 12:30:31.867 UTC [1579] LOG:  listening on Unix socket "/run/rbw-pg/.s.PGSQL.5432"
+2026-10-13 12:30:31.870 UTC [1585] LOG:  database system was shut down at 2026-10-06 18:08:50 UTC
+2026-10-13 12:30:31.876 UTC [1579] LOG:  database system is ready to accept connections
+2026-10-13 12:30:31.923 UTC [1590] FATAL:  role "root" does not exist
+2026-10-13 12:30:59.991 UTC [1898] ERROR:  duplicate key value violates unique constraint "link_slug_key"
+2026-10-13 12:30:59.991 UTC [1898] DETAIL:  Key (slug)=(apitestlink) already exists.
+2026-10-13 12:30:59.991 UTC [1898] STATEMENT:  UPDATE "public"."link" SET "slug" = $1, "updated_at" = $2 WHERE ("public"."link"."link_id" IN ($3) AND ("public"."link"."link_id" = $4 AND 1=1)) RETURNING "public"."link"."link_id", "public"."link"."name", "public"."link"."url", "public"."link"."slug", "public"."link"."user_id", "public"."link"."team_id", "public"."link"."created_at", "public"."link"."updated_at", "public"."link"."deleted_at"
+2026-10-13 12:31:01.056 UTC [1913] ERROR:  duplicate key value violates unique constraint "pixel_slug_key"
+2026-10-13 12:31:01.056 UTC [1913] DETAIL:  Key (slug)=(apitestpixel) already exists.
+2026-10-13 12:31:01.056 UTC [1913] STATEMENT:  UPDATE "public"."pixel" SET "slug" = $1, "updated_at" = $2 WHERE ("public"."pixel"."pixel_id" IN ($3) AND ("public"."pixel"."pixel_id" = $4 AND 1=1)) RETURNING "public"."pixel"."pixel_id", "public"."pixel"."name", "public"."pixel"."slug", "public"."pixel"."user_id", "public"."pixel"."team_id", "public"."pixel"."created_at", "public"."pixel"."updated_at", "public"."pixel"."deleted_at"
+2026-10-13 12:32:03.782 UTC [1927] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.782 UTC [1925] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.782 UTC [1923] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.782 UTC [1921] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.783 UTC [1924] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.784 UTC [1926] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.786 UTC [1922] FATAL:  terminating connection due to administrator command
+2026-10-13 12:32:03.884 UTC [1583] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:32:03.932 UTC [1583] LOG:  checkpoint complete: wrote 1171 buffers (7.1%); 1 WAL file(s) added, 0 removed, 0 recycled; write=0.031 s, sync=0.002 s, total=0.049 s; sync files=501, longest=0.001 s, average=0.001 s; distance=5644 kB, estimate=5644 kB
+2026-10-13 12:32:06.654 UTC [1579] LOG:  received fast shutdown request
+2026-10-13 12:32:06.655 UTC [1579] LOG:  aborting any active transactions
+2026-10-13 12:32:06.657 UTC [1579] LOG:  background worker "logical replication launcher" (PID 1588) exited with exit code 1
+2026-10-13 12:32:06.657 UTC [1583] LOG:  shutting down
+2026-10-13 12:32:06.658 UTC [1583] LOG:  checkpoint starting: shutdown immediate
+2026-10-13 12:32:06.682 UTC [1583] LOG:  checkpoint complete: wrote 1166 buffers (7.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.023 s, sync=0.002 s, total=0.025 s; sync files=491, longest=0.001 s, average=0.001 s; distance=4705 kB, estimate=5550 kB
+2026-10-13 12:32:06.688 UTC [1579] LOG:  database system is shut down

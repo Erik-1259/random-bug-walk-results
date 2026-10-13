@@ -1,0 +1,67 @@
+
+Running 4 tests using 1 worker
+
+  ✓  1 checks/tzarg.check.ts:46:3 › tzarg.utc-day-counts (40ms)
+  ✘  2 checks/tzarg.check.ts:46:3 › tzarg.la-day-counts (34ms)
+  ✓  3 checks/tzarg.check.ts:46:3 › tzarg.auckland-day-counts (30ms)
+  ✘  4 checks/tzarg.check.ts:46:3 › tzarg.kolkata-day-counts (25ms)
+
+
+  1) checks/tzarg.check.ts:46:3 › tzarg.la-day-counts ──────────────────────────────────────────────
+
+    Error: tzarg.la-day-counts (America/Los_Angeles): labels ["2026-03-07T00:00:00Z","2026-03-08T00:00:00Z","2026-03-09T00:00:00Z"] counts [2,8,2]; expected counts [3,8,1]
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 2
+
+      Object {
+    -   "failure_code": null,
+    -   "observed": "pass",
+    +   "failure_code": "local_day_counts_mismatch",
+    +   "observed": "assertion_fail",
+      }
+
+      71 |       response_body: responseBody,
+      72 |     });
+    > 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({
+         |                                                                                                                                                                 ^
+      74 |       observed: "pass",
+      75 |       failure_code: null,
+      76 |     });
+        at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161
+
+    Error Context: ../../../../../var/lib/rbw/results/rbw-runner/out/work/partial-01/added/round-01/tmp/rbw-umami-fixture-17088454fb4446af/tzarg.check.ts-tzarg-la-day-counts/error-context.md
+
+  2) checks/tzarg.check.ts:46:3 › tzarg.kolkata-day-counts ─────────────────────────────────────────
+
+    Error: tzarg.kolkata-day-counts (Asia/Kolkata): labels ["2026-03-07T00:00:00Z","2026-03-08T00:00:00Z","2026-03-09T00:00:00Z"] counts [2,8,2]; expected counts [2,7,3]
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 2
+
+      Object {
+    -   "failure_code": null,
+    -   "observed": "pass",
+    +   "failure_code": "local_day_counts_mismatch",
+    +   "observed": "assertion_fail",
+      }
+
+      71 |       response_body: responseBody,
+      72 |     });
+    > 73 |     expect({ observed: classification.observed, failure_code: classification.failure_code }, `${check.check_id} (${check.timezone}): ${classification.detail}`).toEqual({
+         |                                                                                                                                                                 ^
+      74 |       observed: "pass",
+      75 |       failure_code: null,
+      76 |     });
+        at /opt/rbw/verifier/kit/umami-fixture/checks/tzarg.check.ts:73:161
+
+    Error Context: ../../../../../var/lib/rbw/results/rbw-runner/out/work/partial-01/added/round-01/tmp/rbw-umami-fixture-17088454fb4446af/tzarg.check.ts-tzarg-kolkata-day-counts/error-context.md
+
+  2 failed
+    checks/tzarg.check.ts:46:3 › tzarg.la-day-counts ───────────────────────────────────────────────
+    checks/tzarg.check.ts:46:3 › tzarg.kolkata-day-counts ──────────────────────────────────────────
+  2 passed (2.0s)

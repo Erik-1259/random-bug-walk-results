@@ -1,0 +1,104 @@
+2026-10-13 12:04:31.556 UTC [1615] LOG:  starting PostgreSQL 15.19 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-10-13 12:04:31.556 UTC [1615] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-10-13 12:04:31.556 UTC [1615] LOG:  listening on Unix socket "/run/rbw-pg/.s.PGSQL.5432"
+2026-10-13 12:04:31.558 UTC [1621] LOG:  database system was shut down at 2026-10-06 18:08:50 UTC
+2026-10-13 12:04:31.564 UTC [1615] LOG:  database system is ready to accept connections
+2026-10-13 12:04:31.621 UTC [1626] FATAL:  role "root" does not exist
+2026-10-13 12:05:02.559 UTC [1939] ERROR:  duplicate key value violates unique constraint "link_slug_key"
+2026-10-13 12:05:02.559 UTC [1939] DETAIL:  Key (slug)=(apitestlink) already exists.
+2026-10-13 12:05:02.559 UTC [1939] STATEMENT:  UPDATE "public"."link" SET "slug" = $1, "updated_at" = $2 WHERE ("public"."link"."link_id" IN ($3) AND ("public"."link"."link_id" = $4 AND 1=1)) RETURNING "public"."link"."link_id", "public"."link"."name", "public"."link"."url", "public"."link"."slug", "public"."link"."user_id", "public"."link"."team_id", "public"."link"."created_at", "public"."link"."updated_at", "public"."link"."deleted_at"
+2026-10-13 12:05:03.754 UTC [1953] ERROR:  duplicate key value violates unique constraint "pixel_slug_key"
+2026-10-13 12:05:03.754 UTC [1953] DETAIL:  Key (slug)=(apitestpixel) already exists.
+2026-10-13 12:05:03.754 UTC [1953] STATEMENT:  UPDATE "public"."pixel" SET "slug" = $1, "updated_at" = $2 WHERE ("public"."pixel"."pixel_id" IN ($3) AND ("public"."pixel"."pixel_id" = $4 AND 1=1)) RETURNING "public"."pixel"."pixel_id", "public"."pixel"."name", "public"."pixel"."slug", "public"."pixel"."user_id", "public"."pixel"."team_id", "public"."pixel"."created_at", "public"."pixel"."updated_at", "public"."pixel"."deleted_at"
+2026-10-13 12:06:04.292 UTC [1965] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.292 UTC [1962] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.292 UTC [1968] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.292 UTC [1964] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.292 UTC [1966] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.295 UTC [1963] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.296 UTC [1967] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:04.394 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:04.437 UTC [1619] LOG:  checkpoint complete: wrote 1171 buffers (7.1%); 1 WAL file(s) added, 0 removed, 0 recycled; write=0.028 s, sync=0.002 s, total=0.043 s; sync files=501, longest=0.001 s, average=0.001 s; distance=5672 kB, estimate=5672 kB
+2026-10-13 12:06:06.913 UTC [1986] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:06.913 UTC [1999] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:07.015 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:07.017 UTC [1619] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4708 kB, estimate=5576 kB
+2026-10-13 12:06:09.558 UTC [2015] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:09.558 UTC [2028] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:09.660 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:09.662 UTC [1619] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4712 kB, estimate=5489 kB
+2026-10-13 12:06:12.400 UTC [2058] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:12.400 UTC [2044] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:12.503 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:12.504 UTC [1619] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=9, longest=0.001 s, average=0.001 s; distance=4729 kB, estimate=5413 kB
+2026-10-13 12:06:15.097 UTC [2087] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:15.097 UTC [2074] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:15.199 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:15.201 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=8, longest=0.001 s, average=0.001 s; distance=4711 kB, estimate=5343 kB
+2026-10-13 12:06:17.556 UTC [2116] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:17.556 UTC [2103] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:17.658 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:17.659 UTC [1619] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4709 kB, estimate=5280 kB
+2026-10-13 12:06:19.876 UTC [2145] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:19.876 UTC [2132] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:19.978 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:19.980 UTC [1619] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=8, longest=0.001 s, average=0.001 s; distance=4717 kB, estimate=5223 kB
+2026-10-13 12:06:22.216 UTC [2174] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:22.216 UTC [2161] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:22.317 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:22.319 UTC [1619] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4715 kB, estimate=5173 kB
+2026-10-13 12:06:24.853 UTC [2203] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:24.853 UTC [2190] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:24.955 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:24.957 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4721 kB, estimate=5127 kB
+2026-10-13 12:06:27.326 UTC [2232] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:27.326 UTC [2219] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:27.428 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:27.429 UTC [1619] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4714 kB, estimate=5086 kB
+2026-10-13 12:06:29.799 UTC [2248] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:29.799 UTC [2261] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:29.900 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:29.902 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4721 kB, estimate=5050 kB
+2026-10-13 12:06:32.344 UTC [2291] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:32.344 UTC [2277] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:32.445 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:32.447 UTC [1619] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=9, longest=0.001 s, average=0.001 s; distance=4749 kB, estimate=5019 kB
+2026-10-13 12:06:34.774 UTC [2307] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:34.774 UTC [2320] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:34.876 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:34.877 UTC [1619] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=8, longest=0.001 s, average=0.001 s; distance=4709 kB, estimate=4988 kB
+2026-10-13 12:06:37.169 UTC [2336] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:37.169 UTC [2349] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:37.271 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:37.273 UTC [1619] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=8, longest=0.001 s, average=0.001 s; distance=4713 kB, estimate=4961 kB
+2026-10-13 12:06:39.494 UTC [2378] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:39.494 UTC [2365] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:39.596 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:39.598 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4714 kB, estimate=4936 kB
+2026-10-13 12:06:41.995 UTC [2407] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:41.995 UTC [2394] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:42.097 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:42.099 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4714 kB, estimate=4914 kB
+2026-10-13 12:06:44.369 UTC [2423] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:44.369 UTC [2436] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:44.471 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:44.473 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4715 kB, estimate=4894 kB
+2026-10-13 12:06:46.734 UTC [2465] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:46.734 UTC [2452] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:46.836 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:46.837 UTC [1619] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4723 kB, estimate=4877 kB
+2026-10-13 12:06:49.033 UTC [2494] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:49.033 UTC [2481] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:49.135 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:49.137 UTC [1619] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4717 kB, estimate=4861 kB
+2026-10-13 12:06:51.337 UTC [2510] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:51.337 UTC [2523] FATAL:  terminating connection due to administrator command
+2026-10-13 12:06:51.439 UTC [1619] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:06:51.440 UTC [1619] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=7, longest=0.001 s, average=0.001 s; distance=4717 kB, estimate=4847 kB
+2026-10-13 12:06:53.977 UTC [1615] LOG:  received fast shutdown request
+2026-10-13 12:06:53.978 UTC [1615] LOG:  aborting any active transactions
+2026-10-13 12:06:53.980 UTC [1615] LOG:  background worker "logical replication launcher" (PID 1624) exited with exit code 1
+2026-10-13 12:06:53.980 UTC [1619] LOG:  shutting down
+2026-10-13 12:06:53.981 UTC [1619] LOG:  checkpoint starting: shutdown immediate
+2026-10-13 12:06:54.001 UTC [1619] LOG:  checkpoint complete: wrote 1178 buffers (7.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.019 s, sync=0.002 s, total=0.021 s; sync files=493, longest=0.001 s, average=0.001 s; distance=4738 kB, estimate=4836 kB
+2026-10-13 12:06:54.006 UTC [1615] LOG:  database system is shut down

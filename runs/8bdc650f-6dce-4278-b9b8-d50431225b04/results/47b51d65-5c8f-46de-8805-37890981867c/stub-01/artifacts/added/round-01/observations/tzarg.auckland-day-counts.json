@@ -1,0 +1,9 @@
+{
+  "check_id": "tzarg.auckland-day-counts",
+  "repeat_index": 1,
+  "observed": "assertion_fail",
+  "failure_code": "bucket_labels_mismatch",
+  "duration_ms": 25,
+  "response_artifact_key": "responses/tzarg.auckland-day-counts.json",
+  "response_artifact_sha256": "4c62dec6c092979573c8342880536f5d12347a7880419802313b7670b5a317cc"
+}

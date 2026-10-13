@@ -1,0 +1,15 @@
+2026-10-13 12:20:54.197 UTC [1485] LOG:  starting PostgreSQL 15.19 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-10-13 12:20:54.197 UTC [1485] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-10-13 12:20:54.197 UTC [1485] LOG:  listening on Unix socket "/run/rbw-pg/.s.PGSQL.5432"
+2026-10-13 12:20:54.199 UTC [1491] LOG:  database system was shut down at 2026-10-06 18:08:50 UTC
+2026-10-13 12:20:54.204 UTC [1485] LOG:  database system is ready to accept connections
+2026-10-13 12:20:54.267 UTC [1496] FATAL:  role "root" does not exist
+2026-10-13 12:21:07.299 UTC [1489] LOG:  checkpoint starting: immediate force wait
+2026-10-13 12:21:07.328 UTC [1489] LOG:  checkpoint complete: wrote 1133 buffers (6.9%); 1 WAL file(s) added, 0 removed, 0 recycled; write=0.022 s, sync=0.002 s, total=0.029 s; sync files=492, longest=0.001 s, average=0.001 s; distance=4688 kB, estimate=4688 kB
+2026-10-13 12:21:11.712 UTC [1485] LOG:  received fast shutdown request
+2026-10-13 12:21:11.712 UTC [1485] LOG:  aborting any active transactions
+2026-10-13 12:21:11.714 UTC [1485] LOG:  background worker "logical replication launcher" (PID 1494) exited with exit code 1
+2026-10-13 12:21:11.715 UTC [1489] LOG:  shutting down
+2026-10-13 12:21:11.715 UTC [1489] LOG:  checkpoint starting: shutdown immediate
+2026-10-13 12:21:11.737 UTC [1489] LOG:  checkpoint complete: wrote 1166 buffers (7.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.020 s, sync=0.002 s, total=0.022 s; sync files=491, longest=0.001 s, average=0.001 s; distance=4705 kB, estimate=4705 kB
+2026-10-13 12:21:11.742 UTC [1485] LOG:  database system is shut down
